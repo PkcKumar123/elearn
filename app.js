@@ -19,7 +19,7 @@ app.use(
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://127.0.0.1:5173",
+    origin: "https://elearn-omega.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
@@ -36,7 +36,7 @@ export default app;
 
 app.get("/", (req, res) =>
   res.send(
-    `<h1>Site is Working. click <a href="http://127.0.0.1:5173">here</a> to visit frontend.</h1>`
+    `<h1>Site is Working. click <a href="https://elearn-omega.vercel.app">here</a> to visit frontend.</h1>`
   )
 );
 
